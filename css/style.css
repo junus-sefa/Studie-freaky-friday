@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+html,body{
+  width:100%;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  color:#151515;
+  text-align: center;
+  margin:0;
+}
+
+h1{
+  font-size: 50px;
+}
+
+a{
+  text-decoration: none;
+  color:#151515;
+  transition: .15s;
+}
+
+a:hover{
+    color:#fcc701;
+}
+
+img{
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+
+footer{
+  padding:40px 0 60px;
+  font-weight: 900;
+  text-align: center;
+}
+
+
+button:focus,button:active{
+  outline: none;
+}
+
+
+
+
+
+
+
+section#navigasjon{
+  padding:15px 0 0;
+  background-color: #151515;
+  color:#fff;
+}
+
+section#innhold{
+  padding:50px 250px;
+  line-height: 2;
+}
+
+form .radr{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+form input:focus,form textarea:focus{
+  outline: none;
+}
+form input,form textarea{
+  padding: 10px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding:15px 10px;
+  border:0;
+}
+
+form .kolonr{
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.send_btn{
+  padding:15px 40px;
+  background-color: #000;
+  border:0;
+  color:#fcc701;
+  font-weight: bold;
+  cursor:pointer;
+  transition: .1s;
+}
+
+.send_btn:hover{
+  opacity: .5;
+}
+
+.logo_rad{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_logo{
+  max-width: 40px;
+  padding: 0 10px;
+}
+
+/*----------- Logo -----------*/
+#logo{
+  padding:10px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  opacity: .8;
+  transition: .1s;
+}
+
+#logo:hover{opacity: 1;}
+
+
+
+
+/*----------- Rad & Kolonne -----------*/
+.rad{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rad>div {
+  flex: 0 50%;
+  box-sizing:border-box
+}
+
+.kolonne{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+}
+
+#produkter img{
+  transition: .1s;
+}
+
+#produkter img:hover{
+  transform: scale(.9);
+  cursor:cell;
+}
+
+
+
+
+/*----------- Dropdown Effekt -----------*/
+
+/* Dropdown Button */
+.knapp {
+  background: transparent;
+  color: #fcc701;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: .1s;
+}
+
+/* Dropdown button on hover & focus */
+.knapp:hover, .knapp:focus {
+  opacity: .4;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.meny {
+  display: none;
+  background-color: #fcc701;
+  z-index: 1;
+}
+.meny .aktiv{
+  background-color: #000;
+  color:#fcc701;
+  opacity: .1;
+}
+/* Links inside the dropdown */
+.meny a {
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.meny a:hover {background-color: #000;color:#fcc701;}
+/* Show the dropdown menu (use JS to add this class to the .meny container when the user clicks on the dropdown button) */
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

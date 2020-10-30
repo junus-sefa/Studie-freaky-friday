@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Products - WebIT</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Logo -->
+    <section id="navigasjon">
+      <div id="logo">Web<b>IT</b>.</div>
+      <!-- Dropdown meny -->
+      <div class="dropdown">
+        <button onclick="dropdown()" class="knapp">Menu</button>
+        <div id="menyListe" class="meny">
+          <a href="./index.html">Home</a>
+          <a class="aktiv">Products</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+    <section id="innhold">
+      <h1>Products</h1>
+      <div id="produkter" class="rad">
+        <div class="kolonne">
+          <img alt="produkt1" src="./bilder/produkter/produkt1.jpeg">
+          <h4>MacBook Pro</h4>
+          <ul>
+            <li>2,3 GHz 8-kjerners Intel Core i9-prosessor (9. gen.)</li>
+            <li>Turbo Boost opptil 4,8 GHz</li>
+            <li>16‑tommers Retina‑skjerm med True Tone</li>
+            <li>1 TB SSD-disk</li>
+          </ul>
+        </div>
+        <div class="kolonne">
+          <img alt="produkt2" src="./bilder/produkter/produkt2.jpeg">
+          <h4>MacBook Pro</h4>
+          <ul>
+            <li>2,0 GHz 4-kjerners Intel Core i5-prosessor (10. gen.)</li>
+            <li>Turbo Boost opptil 3,8 GHz</li>
+            <li>13‑tommers Retina‑skjerm med True Tone</li>
+            <li>512 GB SSD-lagring</li>
+          </ul>
+        </div>
+        <div class="kolonne">
+          <img alt="produkt3" src="./bilder/produkter/produkt3.jpeg">
+          <h4>Mac Pro</h4>
+          <ul>
+            <li>8-kjerners Intel Xeon W-prosessor på 3,5 GHz</li>
+            <li>Turbo Boost opptil 4,0 GHz</li>
+            <li>Radeon Pro 580X med 8 GB GDDR5-minne</li>
+            <li>256 GB SSD-lagring</li>
+          </ul>
+        </div>
+        <div class="kolonne">
+          <img alt="produkt4" src="./bilder/produkter/produkt4.jpeg">
+          <h4>iMac</h4>
+          <ul>
+            <li>3,0 GHz 6-kjerners Intel Core i5-prosessor (8. gen.)</li>
+            <li>Turbo Boost opptil 4,1 GHz</li>
+            <li>Radeon Pro 560X med 4 GB GDDR5-minne</li>
+            <li>256 GB SSD-lagring</li>
+          </ul>
+        </div>
+      </div>
+      <i style="opacity:.3;padding-top:100px;display:block;">Image & text Source: apple.com/no/</i>
+    </section>
+
+
+    <footer>&copy; 2020 WebIT.</footer>
+
+
+
+
+
+
+
+
+
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function dropdown() {
+      document.getElementById("menyListe").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.knapp')) {
+        var dropdowns = document.getElementsByClassName("meny");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+  </body>
+</html>

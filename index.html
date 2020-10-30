@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Home - WebIT</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Logo -->
+    <section id="navigasjon">
+      <div id="logo">Web<b>IT</b>.</div>
+      <!-- Dropdown meny -->
+      <div class="dropdown">
+        <button onclick="dropdown()" class="knapp">Menu</button>
+        <div id="menyListe" class="meny">
+          <a class="aktiv">Home</a>
+          <a href="./products.html">Products</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+    <section id="innhold">
+      <h1>We are WebIT!</h1>
+      <img alt="Beskrivende bilde" src="./bilder/hjem_bilde.jpg" style="max-width:700px;">
+      <p>
+        We in WebIT offers IT help to a widespread base of customers, and also we sell<br>
+        technological products such ass: desktops, monitors, phones etc. If you have a<br>
+        problem with your electronical device, contact us, and <b>we <u>WILL</u> help you.</b><br>
+      </p>
+      <br></br>
+      <p>
+        Are you in a look for a new computer/laptop? <br><b><a href="./products.html">Click here</a></b> to see our products.
+      </p>
+    </section>
+
+
+    <footer>&copy; 2020 WebIT.</footer>
+
+
+
+
+
+
+
+
+
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function dropdown() {
+      document.getElementById("menyListe").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.knapp')) {
+        var dropdowns = document.getElementsByClassName("meny");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+  </body>
+</html>

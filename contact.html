@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact - WebIT</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Logo -->
+    <section id="navigasjon">
+      <div id="logo">Web<b>IT</b>.</div>
+      <!-- Dropdown meny -->
+      <div class="dropdown">
+        <button onclick="dropdown()" class="knapp">Menu</button>
+        <div id="menyListe" class="meny">
+          <a href="./index.html">Home</a>
+          <a href="./products.html">Products</a>
+          <a class="aktiv">Contact</a>
+        </div>
+      </div>
+    </section>
+    <section id="innhold" style="background-color:#fcc701">
+      <h1>Contact us</h1>
+      <div id="produkter" class="rad">
+        <div class="kolonne">
+          <form id="kontakt_oss_no">
+            <div class="radr">
+              <div class="kolonr">
+                <label for="fornavn">Fornavn</label><br>
+                <input type="text" id="fornavn" name="fornavn" placeholder="Ola"><br>
+              </div>
+              <div class="kolonr">
+                <label for="etternavn">Etternavn</label><br>
+                <input type="text" id="etternavn" name="etternavn" placeholder="Normann">
+              </div>
+            </div>
+            <div class="radr">
+              <div class="kolonr">
+                <label for="email">Email</label><br>
+                <input type="mail" id="email" name="email" placeholder="olanormann@hotmail.com">
+              </div>
+            </div>
+            <div class="radr">
+              <div class="kolonr">
+                <label for="melding">Melding</label><br>
+                <textarea name="melding" form="kontakt_oss_no" rows="5" placeholder="Hei, mitt navn er..."></textarea>
+              </div>
+            </div>
+            <button class="send_btn">Send</button>
+          </form>
+          <h1>Follow us</h1>
+          <div class="logo_rad">
+            <a target="_blank" href="https://facebook.com"><img class="social_logo" alt="Facebook logo" src="./bilder/facebook_logo.png"></a>
+            <a target="_blank" href="https://twitter.com"><img class="social_logo" alt="Twitter logo" src="./bilder/twitter_logo.png"></a>
+            <a target="_blank" href="https://instagram.com"><img class="social_logo" alt="Instagram logo" src="./bilder/instagram_logo.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>&copy; 2020 WebIT.</footer>
+
+
+
+
+
+
+
+
+
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function dropdown() {
+      document.getElementById("menyListe").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.knapp')) {
+        var dropdowns = document.getElementsByClassName("meny");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+  </body>
+</html>
