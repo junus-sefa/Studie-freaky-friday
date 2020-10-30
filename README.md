@@ -1,6 +1,6 @@
 # freaky-friday
 
-<h1>Assignment</h1>
+<h3>Assignment</h3>
 In this assignment, you will start by working with another student who will create a description of a website that you will then make. If you consider yourself a beginner to coding, try and find someone who has some experience to pair up with, and vice versa. There are four steps to this assignment
 Step 1: Write a 100-word description or a paper prototype of a website that you would like your partner to create. Remember to use what you learned about communication and expressing yourself clearly when writing your description.
 Step 2: Exchange website descriptions or prototypes with your partner and make the website that they’ve described. You will each then present the website to your partner and then provide feedback to them on the design and functionality. Remember to communicate according to what you have learned about communication when giving and receiving the feedback.
