@@ -47,10 +47,11 @@ button:focus,button:active{
 }
 
 
-
-
-
-
+@media screen and (min-device-width : 0px) and (max-device-width : 630px){
+  section#innhold{
+    padding:50px;
+  }
+}
 
 section#navigasjon{
   padding:15px 0 0;
