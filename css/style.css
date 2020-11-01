@@ -49,7 +49,27 @@ button:focus,button:active{
 
 @media screen and (min-device-width : 0px) and (max-device-width : 630px){
   section#innhold{
-    padding:50px;
+    padding:50px!important;
+  }
+  
+  .dropdown {
+    width:100%!important;
+  }
+
+  .meny a{
+    padding: 25px 50px!important;
+  }
+
+  #contact.rad>div{
+    flex: 0 100%!important;
+  }
+
+  #contact form{
+    width:100%;
+  }
+
+  .send_btn{
+    width: 100%;
   }
 }
 
