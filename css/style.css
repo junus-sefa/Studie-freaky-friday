@@ -146,6 +146,7 @@ form .kolonr{
   flex-direction: column;
   width: 50%;
   padding: 30px;
+  align-items: center;
 }
 
 #produkter img{
@@ -157,6 +158,19 @@ form .kolonr{
   cursor:cell;
 }
 
+#produkter button{
+  background-color: #fcc701;
+  padding:10px 50px;
+  border:0;
+  font-weight: bold;
+  transition: .25s;
+}
+
+#produkter button:hover{
+  background-color: #000;
+  color:#fcc701;
+  cursor: pointer;
+}
 
 
 
